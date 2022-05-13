@@ -19,3 +19,24 @@ with open('file.txt') as file:
     # print(file.readlines())
     line1 = file.readlines()[0]  # since this is a list extract the first line of the file
     print([line1])
+    # use strip() to delete any leading or trailing \n ( whitespace )
+    print([line1.strip()])
+
+# TODO write and create files
+# able to overwrite files
+with open('created_in_py.txt','w') as file:
+    file.write('Hello World python created this ( overwrite)\n'
+               'Overwrite again this is fun')  # file will be created in same directory
+
+# TODO Append files
+# able to add a text at the very end of a file
+with open('created_in_py.txt','a') as file:
+    file.write('\nAppending this text to the file')
+
+# TODO r+ mode
+# opening a file for reading and writing
+with open('created_in_py.txt','r+') as file:
+    file.write('using r+ which is read and write')
+    # todo .seek() will change the cursor location in the file -
+
+
