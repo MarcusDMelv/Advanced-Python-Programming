@@ -1,0 +1,3 @@
+using r+ which is read and write  overwrite)
+Overwrite again this is fun
+Appending this text to the file
